@@ -4,27 +4,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/SeaGreen"
+    android:background="@color/colorClaro"
     android:padding="20dp"
-    tools:context=".result">
+    tools:context=".Result">
 
-    <!-- Título -->
 
-    <!-- Layout de Endereço -->
+
+    <ImageView
+        android:id="@+id/voltarBu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginStart="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Botão de voltar"
+        android:src="@drawable/baseline_arrow_circle_left_24"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
 
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:layout_marginBottom="46dp"
         android:gravity="center"
         android:padding="16dp"
         android:text="Endereço Encontrado"
-        android:textColor="@android:color/white"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/addressLayout"
+        app:layout_constraintBottom_toTopOf="@+id/addressLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,15 +47,15 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="5dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="416dp"
         android:background="@drawable/address_background"
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/titleTextView">
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
 
         <!-- Logradouro -->
 
@@ -55,7 +68,7 @@
             android:paddingBottom="8dp"
             android:textColor="@android:color/black"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            />
 
         <TextView
             android:id="@+id/localidadeTextView"
@@ -66,11 +79,20 @@
             android:textColor="@android:color/black"
             android:textSize="18sp"
 
-            android:textStyle="bold" />
+            />
 
         <!-- UF -->
         <TextView
             android:id="@+id/ufTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/bairroTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"

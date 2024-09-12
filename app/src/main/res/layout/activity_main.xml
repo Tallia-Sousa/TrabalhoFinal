@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/SeaGreen">
+    android:background="@color/colorClaro">
 
     <!-- Texto do Título -->
     <TextView
@@ -16,7 +16,7 @@
         android:layout_marginTop="64dp"
         android:padding="16dp"
         android:text="Busque seu Endereço"
-        android:textColor="@android:color/white"
+        android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
         android:gravity="center"
@@ -34,7 +34,7 @@
         android:padding="16dp"
         android:text="Fazer Busca"
         android:textAllCaps="false"
-        android:textColor="@android:color/white"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

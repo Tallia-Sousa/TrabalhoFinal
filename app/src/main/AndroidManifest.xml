@@ -26,8 +26,12 @@
 
 
 
-        <activity android:name=".busca" />
-        <activity android:name=".result"/>
+        <activity android:name=".BuscaActivity"
+
+            />
+        <activity android:name=".Result"
+
+            />
     </application>
 
 </manifest>

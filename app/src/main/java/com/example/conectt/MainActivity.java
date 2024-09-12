@@ -25,10 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private void navigate(View view){
-        Intent intent = new Intent(MainActivity.this, busca.class);
+        Intent intent = new Intent(MainActivity.this, BuscaActivity.class);
         startActivity(intent);
     }
 
 
-    }
-
+}

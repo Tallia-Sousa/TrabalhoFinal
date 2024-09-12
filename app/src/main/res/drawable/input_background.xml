@@ -5,7 +5,7 @@
     <corners android:radius="8dp" />
 
 
-    <stroke android:width="2dp" android:color="#4CAF50" /> <!-- Borda verde de 2dp -->
+    <stroke android:width="2dp" android:color="#000000" /> <!-- Borda verde de 2dp -->
 
 
     <padding

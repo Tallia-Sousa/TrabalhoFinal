@@ -6,9 +6,19 @@ public class Endereco {
     private String uf;
     private String logradouro;
 
+    private String bairro;
+
     // Getters e setters
     public String getLogradouro() {
         return logradouro;
+    }
+
+    public String getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
     }
 
     public void setLogradouro(String logradouro) {

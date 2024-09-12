@@ -6,8 +6,22 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/SeaGreen"
-    tools:context=".busca">
+    android:background="@color/colorClaro"
+    tools:context=".BuscaActivity">
+
+
+
+    <ImageView
+        android:id="@+id/voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginStart="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Botão de voltar"
+        android:src="@drawable/baseline_arrow_circle_left_24"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
 
     <!-- Campo de Entrada para CEP -->
     <EditText
@@ -44,5 +58,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5" />
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
